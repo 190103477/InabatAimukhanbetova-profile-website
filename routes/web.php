@@ -33,3 +33,8 @@ Route::get('post/create', function(){
         'body' => 'My name is Inabat'
     ]);
 });
+Route::get('post', function(){
+    $post = Post::find(1);
+    return $post->body;  
+   
+});
